@@ -27,7 +27,8 @@
   --fs-xxxl: 130px;
   --bg-main: rgba(22, 22, 22, 1);
   --bg-second: rgba(26, 25, 26, 1);
-  --text-main: white;
+  --text-main: rgb(255, 255, 255);
+  --text-second:rgb(205, 205, 205);
 }
 .ff-American-Captain {
   font-family: "American Captain";
@@ -75,6 +76,9 @@
 .text-main {
   color: var(--text-main) !important;
 }
+.text-second{
+  color: var(--text-second) !important;
+}
 .w-183 {
   width: 183px !important;
 }
@@ -119,7 +123,7 @@
   background-color: rgba(0, 221, 168, 0.5) !important;
 }
 .bg-blue {
-  background-color: rgba(0, 88, 221, 0.6) !important;
+  background-color: rgb(2, 103, 255) !important;
 }
 .bg-red {
   background: rgba(207, 41, 41, 0.6) !important;
@@ -197,7 +201,7 @@ input {
   outline: none;
 }
 input::placeholder {
-  color: var(--text-main);
+  color:rgba(242, 242, 242, 1);
 }
 .container {
   max-width: 1720px !important;
@@ -213,8 +217,8 @@ input::placeholder {
   color: black !important;
   transition: all 222ms linear !important;
 }
-.btn-hover:hover .hide-svg {
-  display: none;
+.btn-hover:hover path {
+  stroke: black;
 }
 .play-btn:hover {
   background: #ffffff47;
@@ -232,7 +236,9 @@ input::placeholder {
 .slick-box:hover .slick-card-man {
   top: 0 !important;
 }
-
+footer ul li a:hover{
+  color: var(--text-main) !important;
+}
 @media (min-width: 300px) {
   :root {
     --fs-sm: 12px;
@@ -331,6 +337,9 @@ input::placeholder {
   .bg-transprant-black {
     background-color: rgba(0, 0, 0, 0.57) !important;
   }
+  .w-158{
+    width: 158px !important;
+  }
   .play-btn {
     cursor: pointer;
     width: 120px;
@@ -376,5 +385,21 @@ input::placeholder {
   }
   .nav-hover:hover.nav-hover::before {
     width: 80%;
+  }
+  .pt-lg-100{
+    padding-top: 100px;
+  }
+  .container{
+    max-width: 1300px !important;
+  }
+}
+@media (min-width:1500px) {
+  .container{
+    max-width: 1400px !important;
+  }}
+
+@media (min-width:1800px) {
+  .container{
+    max-width: 1720px !important;
   }
 }
