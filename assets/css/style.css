@@ -393,10 +393,18 @@ footer ul li a:hover{
     max-width: 1300px !important;
   }
 }
+@media (min-width:1200px) {
+  .ps-md-0{
+    padding-left: 0 !important ;
+  }
+}
 @media (min-width:1500px) {
   .container{
     max-width: 1400px !important;
-  }}
+  }
+ 
+
+}
 
 @media (min-width:1800px) {
   .container{
